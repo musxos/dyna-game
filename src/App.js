@@ -65,6 +65,7 @@ const Header = () => (
       <div className="d-flex align-items-center links">
         <a href="https://x.com/DynaSwap" className="text-white me-3">Twitter</a>
         <a href="https://discord.gg/kMKu47SN2j" className="text-white me-3">Discord</a>
+        <a href="https://github.com/musxos/dyna-game" className="text-white me-3">Github Source</a>
       </div>
     </div>
     <ConnectButton />
@@ -147,16 +148,25 @@ const MainContent = () => {
   );
 };
 
-const Statistics = ({ totalGamesPlayed, uniquePlayersCount, totalPredictionsMade }) => (
-  <div className="mb-5">
-    <h2 className="section-title">Game Statistics</h2>
-    <div className="d-flex justify-content-between stats">
-      <div>Total Games Played: {totalGamesPlayed}</div>
-      <div>Total Unique Players: {uniquePlayersCount}</div>
-      <div>Total Predictions Made: {totalPredictionsMade}</div>
+const Statistics = ({ totalGamesPlayed, uniquePlayersCount, totalPredictionsMade }) => {
+  const endDate = new Date();
+  endDate.setDate(endDate.getDate() + 2);
+  const formattedEndDate = endDate.toUTCString();
+
+  return (
+    <div className="mb-5">
+      <h2 className="section-title">Game Statistics</h2>
+      <div className="d-flex justify-content-between stats">
+        <div>Total Games Played: {totalGamesPlayed}</div>
+        <div>Total Unique Players: {uniquePlayersCount}</div>
+        <div>Total Predictions Made: {totalPredictionsMade}</div>
+      </div>
+      <div className="game-end-date mt-3">
+        <strong>Game Ends On:</strong> {formattedEndDate}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Leaderboard = ({ leaderboard }) => (
   <div className="mb-5">
