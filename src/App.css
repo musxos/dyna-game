@@ -1,0 +1,71 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.header-title {
+  color: white;
+}
+
+header .d-flex.align-items-center > * {
+  margin-right: 1rem;
+}
+
+header .d-flex.align-items-center > *:last-child {
+  margin-right: 0;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto; /* Makes sure footer stays at the bottom */
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stats {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.prediction-form {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .d-flex.align-items-center {
+    flex-direction: column;
+  }
+
+  .d-flex.align-items-center img,
+  .d-flex.align-items-center .links {
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
