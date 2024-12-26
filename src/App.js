@@ -162,7 +162,7 @@ const Statistics = ({ totalGamesPlayed, uniquePlayersCount, totalPredictionsMade
         <div>Total Predictions Made: {totalPredictionsMade}</div>
       </div>
       <div className="game-end-date mt-3">
-        <strong>Game Ends On:</strong> {formattedEndDate}
+        <strong>Game Ends On:</strong> January 1, 2025, 00:00 EST
       </div>
     </div>
   );
