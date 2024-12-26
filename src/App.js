@@ -228,7 +228,7 @@ const PredictionForm = ({ ethPrice, penguPrice, walletConnected }) => {
       <h2 className="section-title">Token Predictions</h2>
       <form onSubmit={handleSubmit}>
         <div className="d-flex align-items-center prediction-form mb-3">
-          <img src="eth.png" alt="ETH Logo" height="40" className="me-3" />
+          <img src="ETH.png" alt="ETH Logo" height="40" className="me-3" />
           <div className="me-3">Current ETH Price: ${ethPrice}</div>
           <input
             type="number"
@@ -239,7 +239,7 @@ const PredictionForm = ({ ethPrice, penguPrice, walletConnected }) => {
           />
         </div>
         <div className="d-flex align-items-center prediction-form mb-3">
-          <img src="pengu.png" alt="PENGU Logo" height="40" className="me-3" />
+          <img src="PENGU.png" alt="PENGU Logo" height="40" className="me-3" />
           <div className="me-3">Current PENGU Price: ${penguPrice}</div>
           <input
             type="number"
